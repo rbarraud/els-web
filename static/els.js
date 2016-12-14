@@ -147,12 +147,43 @@ var ELS = function(){
         });
     }
 
+    self.decorateBackground = function(num){
+        var rand = function(n){return Math.random()*n};
+        
+        var html = document.documentElement;
+        var body = document.body;
+        var main = document.getElementsByTagName("main")[0];
+        var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var h = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+        var num = num || h/200;
+        
+        var container = document.createElement("div");
+        container.setAttribute("style", "overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%;");        
+        body.style.position = "relative";
+        body.insertBefore(container, body.firstChild);
+        for(var i=0; i<num; i++){
+            var el = document.createElement("div");
+            var s = 100+rand(500);
+            el.style.position = "absolute";
+            el.style.left = rand(w+s)-s+"px";
+            el.style.top = rand(h+s)-s/2+"px";
+            el.style.width = s+"px";
+            el.style.height = s+"px";
+            el.style.transform = "rotate("+rand(360)+"deg)";
+            el.style.zIndex = -1;
+            el.style.filter = "brightness("+(140+rand(10))+"%)";
+            el.style.background = "rgba(28, 75, 128, 0.5)";
+            container.appendChild(el);
+        }
+    }
+
     self.init = function(){
         self.decodeEmailElements();
         if(document.getElementById("programme")){
             self.continuouslyUpdateProgramme();
             self.initTimeSetter();
         }
+        self.decorateBackground();
         return self;
     }
 }
