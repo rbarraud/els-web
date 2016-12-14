@@ -158,12 +158,13 @@ var ELS = function(){
         var num = num || h/200;
         
         var container = document.createElement("div");
-        container.setAttribute("style", "overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%;");        
+        container.setAttribute("style", "overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; height: 100%; pointer-events: none;");
         body.style.position = "relative";
         body.insertBefore(container, body.firstChild);
         for(var i=0; i<num; i++){
             var el = document.createElement("div");
             var s = 100+rand(500);
+            el.style.pointerEvents = "none";
             el.style.position = "absolute";
             el.style.left = rand(w+s)-s+"px";
             el.style.top = rand(h+s)-s/2+"px";
