@@ -165,7 +165,9 @@
             :vertical-align middle))))
 
     ("#highlights"
-     (>ul :list-style none))
+     (>ul :list-style none)
+     (".person .org:before"
+      :content ", "))
 
     ("#programme"
      ("#set-time"
@@ -202,7 +204,7 @@
        :border-top 10px solid transparent
        :border-bottom 10px solid transparent
        :border-left 10px solid #(main-bg))))
-
+    
     ((:or .programme-entry .highlight)
      (h4 :display inline-block
          :margin 0)
@@ -214,7 +216,16 @@
      (.speaker
       (* :display none)
       ((:or .fn .email .org .url) :display inline)
-      (.fn :white-space nowrap))))
+      (.fn :white-space nowrap)))
+
+    ("#conferences"
+     (ul :display flex
+         :flex-wrap wrap
+         :justify-content space-around
+         :list-style none
+         :padding 10px
+         (li :padding 5px
+             :font-size 1.2em))))
 
    (footer
     :text-align center
