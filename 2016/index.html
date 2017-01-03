@@ -44,10 +44,11 @@
           <section id="highlights">
             <h3>Highlights</h3>
             <ul><li><section class="highlight talk keynote">
-  <h4>Julia - To Lisp or not to Lisp</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>Julia - To Lisp or not to Lisp</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Stefan Karpinski</span>
   
@@ -71,8 +72,9 @@
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>Julia is a general purpose dynamic language, designed to make numerical computing fast and convenient. Many aspects of Julia should be quite familiar since they are &quot;stolen&quot; straight from Lisp: it’s expression-oriented, lexically scoped, has closures, coroutines, and macros that operate on code as data. But Julia departs from the Lisp tradition in other ways. Julia has syntax – lots of it. Macro invocations look different than function calls. Some dynamic behaviors are sacrificed to make programs easier to analyze (for both humans and compilers), especially where it allows simpler, more reliable program optimization.
 
 Julia’s most distinctive feature is its emphasis on creating lightweight types and defining their behavior in terms of generic functions. While many Lisps support multiple dispatch as an opt-in feature, in Julia all function are generic by default. Even basic operators like `+` are generic, and primitive types like `Int` and `Float64` are defined in the standard library, and their behavior is specified via multiple dispatch. A combination of aggressive method specialization, inlining and data-flow-based type inference, allow these layers of abstraction and dispatch to be eliminated when it counts – Julia generally has performance comparable to static languages.
@@ -80,10 +82,11 @@ Julia’s most distinctive feature is its emphasis on creating lightweight types
 In the tradition of the great Lisp hackers, this talk will include lots of live coding in the REPL, with all the excitement, and possibility of failure entailed.</p>
 </section>
 </li><li><section class="highlight talk keynote">
-  <h4>Lexical Closures and Complexity</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>Lexical Closures and Complexity</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Francis Sergeraert</span>
   
@@ -107,8 +110,9 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>The power of Common Lisp for Functional_Programming is well known, the key tool being the notion of &quot;lexical closure&quot;, allowing the programmer to write programs which, during execution, dynamically generate functional objects of arbitrary complexity. Using this technology, new algorithms in Algebraic Topology have been discovered, implemented in Common Lisp and used, producing homology and homotopy groups so far unreachable. An algorithm is viewed as &quot;tractable&quot; if its theoretical complexity is not worse than polynomial. The study of this complexity for the aforementioned of Algebraic Topology algorithms requires a lucid knowledge of the concrete implementation of these lexical closures. This talk is devoted to a report about a result of polynomial complexity so obtained. The scope of the method is general and in particular no knowledge in Algebraic Topology is expected from the audience.</p>
 </section>
 </li></ul>
@@ -272,8 +276,7 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
             <h3>Organization</h3>
             
               <h4>Programme Chair</h4>
-              
-                <span class="person vcard programme-chair">
+              <ul class="programme-chairs"><li><span class="person vcard programme-chair">
   
   <span class="fn">Irène Durand</span>
   
@@ -296,13 +299,11 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   <span class="role">(PROGRAMME-CHAIR)</span>
   
 </span>
-
-              
+</li></ul>
             
             
               <h4>Local Chair</h4>
-              
-                <span class="person vcard local-chair">
+              <ul class="local-chairs"><li><span class="person vcard local-chair">
   
   <span class="fn">Michał Psota</span>
   
@@ -325,8 +326,7 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   <span class="role">(LOCAL-CHAIR)</span>
   
 </span>
-
-              
+</li></ul>
             
             
               <h4>Committee</h4>
@@ -607,6 +607,7 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   
 </span>
 </li></ul>
+            
             
             
               <h4>Sponsors</h4>
@@ -1347,164 +1348,262 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
             <h3>Programme</h3>
             <input type="text" id="set-time" value="" placeholder="2015.4.20 8:30" title="Here you can manually set the time of the programme calendar."/>
             <ol><li><section class="programme-entry organization">
-  <time datetime="2016-05-08T18:00:00+02:00" title="Sunday 8th of May 2016, 18:00 (+02:00)">18:00</time>
-  <h4>Welcome reception, pre-registration</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-08T18:00:00+02:00" title="Sunday 8th of May 2016, 18:00 (+02:00)">18:00</time>
+    <h4>Welcome reception, pre-registration</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry organization">
-  <time datetime="2016-05-09T08:30:00+02:00" title="Monday 9th of May 2016, 8:30 (+02:00)">8:30</time>
-  <h4>Registration</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T08:30:00+02:00" title="Monday 9th of May 2016, 8:30 (+02:00)">8:30</time>
+    <h4>Registration</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry organization">
-  <time datetime="2016-05-09T09:00:00+02:00" title="Monday 9th of May 2016, 9:00 (+02:00)">9:00</time>
-  <h4>Welcome Message</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T09:00:00+02:00" title="Monday 9th of May 2016, 9:00 (+02:00)">9:00</time>
+    <h4>Welcome Message</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2016-05-09T09:30:00+02:00" title="Monday 9th of May 2016, 9:30 (+02:00)">9:30</time>
-  <h4>Lexical Closures and Complexity</h4>
-  <ul class="speakers"><li class="speaker">Francis Sergeraert</li></ul>
+  <header>
+    <time datetime="2016-05-09T09:30:00+02:00" title="Monday 9th of May 2016, 9:30 (+02:00)">9:30</time>
+    <h4>Lexical Closures and Complexity</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Francis Sergeraert</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-09T10:30:00+02:00" title="Monday 9th of May 2016, 10:30 (+02:00)">10:30</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T10:30:00+02:00" title="Monday 9th of May 2016, 10:30 (+02:00)">10:30</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T11:00:00+02:00" title="Monday 9th of May 2016, 11:00 (+02:00)">11:00</time>
-  <h4>Refactoring Dynamic Languages</h4>
-  <ul class="speakers"><li class="speaker">Rafael Reia</li><li class="speaker">António Leitão</li></ul>
+  <header>
+    <time datetime="2016-05-09T11:00:00+02:00" title="Monday 9th of May 2016, 11:00 (+02:00)">11:00</time>
+    <h4>Refactoring Dynamic Languages</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Rafael Reia</li><li class="speaker">António Leitão</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T11:30:00+02:00" title="Monday 9th of May 2016, 11:30 (+02:00)">11:30</time>
-  <h4>Type-Checking of Heterogeneous Sequences in Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Jim Newton</li><li class="speaker">Akim Demaille</li><li class="speaker">Didier Verna</li></ul>
+  <header>
+    <time datetime="2016-05-09T11:30:00+02:00" title="Monday 9th of May 2016, 11:30 (+02:00)">11:30</time>
+    <h4>Type-Checking of Heterogeneous Sequences in Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Jim Newton</li><li class="speaker">Akim Demaille</li><li class="speaker">Didier Verna</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T12:00:00+02:00" title="Monday 9th of May 2016, 12:00 (+02:00)">12:00</time>
-  <h4>A CLOS Protocol for Editor Buffers</h4>
-  <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  <header>
+    <time datetime="2016-05-09T12:00:00+02:00" title="Monday 9th of May 2016, 12:00 (+02:00)">12:00</time>
+    <h4>A CLOS Protocol for Editor Buffers</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-09T12:30:00+02:00" title="Monday 9th of May 2016, 12:30 (+02:00)">12:30</time>
-  <h4>Lunch</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T12:30:00+02:00" title="Monday 9th of May 2016, 12:30 (+02:00)">12:30</time>
+    <h4>Lunch</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T14:00:00+02:00" title="Monday 9th of May 2016, 14:00 (+02:00)">14:00</time>
-  <h4>Using Lisp Macro-Facilities for Transferable Statistical Tests</h4>
-  <ul class="speakers"><li class="speaker">Kay Hamacher</li></ul>
+  <header>
+    <time datetime="2016-05-09T14:00:00+02:00" title="Monday 9th of May 2016, 14:00 (+02:00)">14:00</time>
+    <h4>Using Lisp Macro-Facilities for Transferable Statistical Tests</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Kay Hamacher</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T14:30:00+02:00" title="Monday 9th of May 2016, 14:30 (+02:00)">14:30</time>
-  <h4>A High-Performance Image Processing DSL for Heterogeneous Architectures</h4>
-  <ul class="speakers"><li class="speaker">Kai Selgrad</li><li class="speaker">Alexander Lier</li><li class="speaker">Jan Dörntlein</li><li class="speaker">Oliver Reiche</li><li class="speaker">Marc Stamminger</li></ul>
+  <header>
+    <time datetime="2016-05-09T14:30:00+02:00" title="Monday 9th of May 2016, 14:30 (+02:00)">14:30</time>
+    <h4>A High-Performance Image Processing DSL for Heterogeneous Architectures</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Kai Selgrad</li><li class="speaker">Alexander Lier</li><li class="speaker">Jan Dörntlein</li><li class="speaker">Oliver Reiche</li><li class="speaker">Marc Stamminger</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-09T15:00:00+02:00" title="Monday 9th of May 2016, 15:00 (+02:00)">15:00</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T15:00:00+02:00" title="Monday 9th of May 2016, 15:00 (+02:00)">15:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T15:30:00+02:00" title="Monday 9th of May 2016, 15:30 (+02:00)">15:30</time>
-  <h4>Distributed High Performance Computing in Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Marco Heisig</li><li class="speaker">Nicolas Neuss</li></ul>
+  <header>
+    <time datetime="2016-05-09T15:30:00+02:00" title="Monday 9th of May 2016, 15:30 (+02:00)">15:30</time>
+    <h4>Distributed High Performance Computing in Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Marco Heisig</li><li class="speaker">Nicolas Neuss</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T16:00:00+02:00" title="Monday 9th of May 2016, 16:00 (+02:00)">16:00</time>
-  <h4>Fast Interactive Functional Computer Vision with Racket</h4>
-  <ul class="speakers"><li class="speaker">Benjamin Seppke</li><li class="speaker">Leonie Dreschler-Fischer</li></ul>
+  <header>
+    <time datetime="2016-05-09T16:00:00+02:00" title="Monday 9th of May 2016, 16:00 (+02:00)">16:00</time>
+    <h4>Fast Interactive Functional Computer Vision with Racket</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Benjamin Seppke</li><li class="speaker">Leonie Dreschler-Fischer</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-09T16:30:00+02:00" title="Monday 9th of May 2016, 16:30 (+02:00)">16:30</time>
-  <h4>Accessing local variables during debugging</h4>
-  <ul class="speakers"><li class="speaker">Michael Raskin</li><li class="speaker">Nikita Mamardashvili</li></ul>
+  <header>
+    <time datetime="2016-05-09T16:30:00+02:00" title="Monday 9th of May 2016, 16:30 (+02:00)">16:30</time>
+    <h4>Accessing local variables during debugging</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Michael Raskin</li><li class="speaker">Nikita Mamardashvili</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk lightning">
-  <time datetime="2016-05-09T17:00:00+02:00" title="Monday 9th of May 2016, 17:00 (+02:00)">17:00</time>
-  <h4>Lightning Talks</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T17:00:00+02:00" title="Monday 9th of May 2016, 17:00 (+02:00)">17:00</time>
+    <h4>Lightning Talks</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-09T17:30:00+02:00" title="Monday 9th of May 2016, 17:30 (+02:00)">17:30</time>
-  <h4></h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-09T17:30:00+02:00" title="Monday 9th of May 2016, 17:30 (+02:00)">17:30</time>
+    <h4></h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2016-05-10T09:00:00+02:00" title="Tuesday 10th of May 2016, 9:00 (+02:00)">9:00</time>
-  <h4>Julia - To Lisp or not to Lisp</h4>
-  <ul class="speakers"><li class="speaker">Stefan Karpinski</li></ul>
+  <header>
+    <time datetime="2016-05-10T09:00:00+02:00" title="Tuesday 10th of May 2016, 9:00 (+02:00)">9:00</time>
+    <h4>Julia - To Lisp or not to Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Stefan Karpinski</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-10T10:30:00+02:00" title="Tuesday 10th of May 2016, 10:30 (+02:00)">10:30</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T10:30:00+02:00" title="Tuesday 10th of May 2016, 10:30 (+02:00)">10:30</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T11:00:00+02:00" title="Tuesday 10th of May 2016, 11:00 (+02:00)">11:00</time>
-  <h4>A modern implementation of the LOOP macro</h4>
-  <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  <header>
+    <time datetime="2016-05-10T11:00:00+02:00" title="Tuesday 10th of May 2016, 11:00 (+02:00)">11:00</time>
+    <h4>A modern implementation of the LOOP macro</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T11:30:00+02:00" title="Tuesday 10th of May 2016, 11:30 (+02:00)">11:30</time>
-  <h4>Source-to-Source Compilation via Submodules</h4>
-  <ul class="speakers"><li class="speaker">Tero Hasu</li><li class="speaker">Matthew Flatt</li></ul>
+  <header>
+    <time datetime="2016-05-10T11:30:00+02:00" title="Tuesday 10th of May 2016, 11:30 (+02:00)">11:30</time>
+    <h4>Source-to-Source Compilation via Submodules</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Tero Hasu</li><li class="speaker">Matthew Flatt</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T12:00:00+02:00" title="Tuesday 10th of May 2016, 12:00 (+02:00)">12:00</time>
-  <h4>Extending Software Transactional Memory in Clojure with Side-Effects and Transaction Control</h4>
-  <ul class="speakers"><li class="speaker">Søren Jensen</li><li class="speaker">Lone Thomsen</li></ul>
+  <header>
+    <time datetime="2016-05-10T12:00:00+02:00" title="Tuesday 10th of May 2016, 12:00 (+02:00)">12:00</time>
+    <h4>Extending Software Transactional Memory in Clojure with Side-Effects and Transaction Control</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Søren Jensen</li><li class="speaker">Lone Thomsen</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk break">
-  <time datetime="2016-05-10T12:30:00+02:00" title="Tuesday 10th of May 2016, 12:30 (+02:00)">12:30</time>
-  <h4>Lunch</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T12:30:00+02:00" title="Tuesday 10th of May 2016, 12:30 (+02:00)">12:30</time>
+    <h4>Lunch</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T14:00:00+02:00" title="Tuesday 10th of May 2016, 14:00 (+02:00)">14:00</time>
-  <h4>CANDO: A Compiled Programming Language for Computer-Aided Nanomaterial Design and Optimization Based on Clasp Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Christian Schafmeister</li></ul>
+  <header>
+    <time datetime="2016-05-10T14:00:00+02:00" title="Tuesday 10th of May 2016, 14:00 (+02:00)">14:00</time>
+    <h4>CANDO: A Compiled Programming Language for Computer-Aided Nanomaterial Design and Optimization Based on Clasp Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Christian Schafmeister</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T14:30:00+02:00" title="Tuesday 10th of May 2016, 14:30 (+02:00)">14:30</time>
-  <h4>A Case Study in Implementation-Space Exploration</h4>
-  <ul class="speakers"><li class="speaker">Alexander Lier</li><li class="speaker">Linus Franke</li><li class="speaker">Marc Stamminger</li><li class="speaker">Kai Selgrad</li></ul>
+  <header>
+    <time datetime="2016-05-10T14:30:00+02:00" title="Tuesday 10th of May 2016, 14:30 (+02:00)">14:30</time>
+    <h4>A Case Study in Implementation-Space Exploration</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Alexander Lier</li><li class="speaker">Linus Franke</li><li class="speaker">Marc Stamminger</li><li class="speaker">Kai Selgrad</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T15:00:00+02:00" title="Tuesday 10th of May 2016, 15:00 (+02:00)">15:00</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T15:00:00+02:00" title="Tuesday 10th of May 2016, 15:00 (+02:00)">15:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T15:30:00+02:00" title="Tuesday 10th of May 2016, 15:30 (+02:00)">15:30</time>
-  <h4>An Inferred System Description Facility</h4>
-  <ul class="speakers"><li class="speaker">James Anderson</li></ul>
+  <header>
+    <time datetime="2016-05-10T15:30:00+02:00" title="Tuesday 10th of May 2016, 15:30 (+02:00)">15:30</time>
+    <h4>An Inferred System Description Facility</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">James Anderson</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2016-05-10T16:00:00+02:00" title="Tuesday 10th of May 2016, 16:00 (+02:00)">16:00</time>
-  <h4>Building Common Lisp programs using Bazel</h4>
-  <ul class="speakers"><li class="speaker">James Knight</li><li class="speaker">François-René Rideau</li><li class="speaker">Andrzej Walczak</li></ul>
+  <header>
+    <time datetime="2016-05-10T16:00:00+02:00" title="Tuesday 10th of May 2016, 16:00 (+02:00)">16:00</time>
+    <h4>Building Common Lisp programs using Bazel</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">James Knight</li><li class="speaker">François-René Rideau</li><li class="speaker">Andrzej Walczak</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk lightning">
-  <time datetime="2016-05-10T16:30:00+02:00" title="Tuesday 10th of May 2016, 16:30 (+02:00)">16:30</time>
-  <h4>Lightning Talks</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T16:30:00+02:00" title="Tuesday 10th of May 2016, 16:30 (+02:00)">16:30</time>
+    <h4>Lightning Talks</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry organization">
-  <time datetime="2016-05-10T17:00:00+02:00" title="Tuesday 10th of May 2016, 17:00 (+02:00)">17:00</time>
-  <h4>Conference End</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T17:00:00+02:00" title="Tuesday 10th of May 2016, 17:00 (+02:00)">17:00</time>
+    <h4>Conference End</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2016-05-10T17:30:00+02:00" title="Tuesday 10th of May 2016, 17:30 (+02:00)">17:30</time>
-  <h4></h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T17:30:00+02:00" title="Tuesday 10th of May 2016, 17:30 (+02:00)">17:30</time>
+    <h4></h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry dinner">
-  <time datetime="2016-05-10T19:30:00+02:00" title="Tuesday 10th of May 2016, 19:30 (+02:00)">19:30</time>
-  <h4>Conference Dinner</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2016-05-10T19:30:00+02:00" title="Tuesday 10th of May 2016, 19:30 (+02:00)">19:30</time>
+    <h4>Conference Dinner</h4>
+  </header>
+  
 </section>
 </li></ol>
           </section>
@@ -1555,7 +1654,7 @@ In the tradition of the great Lisp hackers, this talk will include lots of live 
   </p>
   <p>
     Last updated on
-    <time datetime="2017-01-03T20:53:17-01:00" class="published updated" title="Tuesday 3rd of January 2017, 20:53 (-01:00)">2017.01.03</time>
+    <time datetime="2017-01-03T22:24:18-01:00" class="published updated" title="Tuesday 3rd of January 2017, 22:24 (-01:00)">2017.01.03</time>
   </p>
   <p>
     Generated by

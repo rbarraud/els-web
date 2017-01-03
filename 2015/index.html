@@ -44,10 +44,11 @@
           <section id="highlights">
             <h3>Highlights</h3>
             <ul><li><section class="highlight talk keynote">
-  <h4>Escaping the Heap</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>Escaping the Heap</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Ahmon Dancy</span>
   
@@ -71,17 +72,19 @@
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>Common Lisp implementations provide great automatic memory management of data structures. These data structures are allocated from a memory area called the “heap”. However, there are times when heap allocation is inadequate to satisfy the needs of the application. For example, sometimes data structures need to be persistent or shareable amongst separate processes. In these cases, alternatives to using the heap must be considered.
 
 In this talk we will explore the motivations for out-of-heap data structures. We will discuss some of the out-of-heap data structures that we’ve created in the course of developing our database product, such as lists, hash tables, and arrays. We will describe the tools and mechanisms that we used to implement them, including memory-mapped files, foreign structs, aligned pointers and direct memory accesses. Finally we will discuss the downsides of out-of-heap data structures and the constant struggle between abstractions and performance.</p>
 </section>
 </li><li><section class="highlight talk keynote">
-  <h4>Quicklisp: On Beyond Beta</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>Quicklisp: On Beyond Beta</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Zach Beane</span>
   
@@ -105,15 +108,17 @@ In this talk we will explore the motivations for out-of-heap data structures. We
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>Quicklisp was released in 2010 as a public beta. Five years later, it's still in beta. How has Quicklisp (and Common Lisp) evolved in the past five years? What will it take for Quicklisp to go on beyond beta?</p>
 </section>
 </li><li><section class="highlight talk keynote">
-  <h4>Unwanted memory retention</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>Unwanted memory retention</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Martin Cracauer</span>
   
@@ -137,15 +142,17 @@ In this talk we will explore the motivations for out-of-heap data structures. We
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>This talk goes over numerous oddities in a Lisp-based system which led to unwanted heap memory retention and to constant resident memory growth over the uptime of the system. Issues covered include a mostly conservative but also paged garbage collector, the difficulty of clearing out data structures that are retainted as an optimization but that might hold on to large amounts of heap (and how that happens in C++, too) and how large intercollected and theoretically uprooted &quot;clouds of heap debris&quot; interact with stale pointers out of same. The most delicious pieces center around pointer staleness out of the saved (on-disk, but read-write mapped) part of the heap, which is not garbage collected, into anonymous memory backed heap and how you can create rootless but uncollected and &quot;untraceable&quot; object circles. Untraceable until you hack up the GC to help you.</p>
 </section>
 </li><li><section class="highlight talk keynote">
-  <h4>µKanren: Running the Little Things Backwards</h4>
-  <ul class="speakers"><li>
-      
-        <span class="person vcard speaker">
+  <header>
+    <h4>µKanren: Running the Little Things Backwards</h4>
+    <ul class="speakers"><li>
+        
+          <span class="person vcard speaker">
   
   <span class="fn">Bodil Stokke</span>
   
@@ -169,8 +176,9 @@ In this talk we will explore the motivations for out-of-heap data structures. We
   
 </span>
 
-      
-    </li></ul>
+        
+      </li></ul>
+  </header>
   <p>Relational programming, or logic programming, is a programming paradigm that exhibits remarkable and powerful properties, to the extent that its implementation seems frightfully daunting to the layman. µKanren is a minimal relational language that seeks to strip the paradigm down to its core, leaving us with a succinct, elegant and above all simple set of primitives on top of which we can rebuild even the most powerful relational constructs.
 
 In this talk, we will explore the µKanren language by implementing it from first principles in a simple functional programming language, going on to demonstrate how you can assemble these simple building blocks into a semblance of its richer parent, miniKanren, and maybe solve a logic puzzle or two to make sure it’s working as advertised.</p>
@@ -387,8 +395,7 @@ In this talk, we will explore the µKanren language by implementing it from firs
             <h3>Organization</h3>
             
               <h4>Programme Chair</h4>
-              
-                <span class="person vcard programme-chair">
+              <ul class="programme-chairs"><li><span class="person vcard programme-chair">
   
   <span class="fn">Julian Padget</span>
   
@@ -411,13 +418,11 @@ In this talk, we will explore the µKanren language by implementing it from firs
   <span class="role">(PROGRAMME-CHAIR)</span>
   
 </span>
-
-              
+</li></ul>
             
             
               <h4>Local Chair</h4>
-              
-                <span class="person vcard local-chair">
+              <ul class="local-chairs"><li><span class="person vcard local-chair">
   
   <span class="fn">Christophe Rhodes</span>
   
@@ -440,8 +445,7 @@ In this talk, we will explore the µKanren language by implementing it from firs
   <span class="role">(LOCAL-CHAIR)</span>
   
 </span>
-
-              
+</li></ul>
             
             
               <h4>Committee</h4>
@@ -699,6 +703,7 @@ In this talk, we will explore the µKanren language by implementing it from firs
   
 </span>
 </li></ul>
+            
             
             
               <h4>Sponsors</h4>
@@ -1182,154 +1187,248 @@ In this talk, we will explore the µKanren language by implementing it from firs
             <h3>Programme</h3>
             <input type="text" id="set-time" value="" placeholder="2015.4.20 8:30" title="Here you can manually set the time of the programme calendar."/>
             <ol><li><section class="programme-entry organization">
-  <time datetime="2015-04-20T08:30:00Z" title="Monday 20th of April 2015, 8:30 ">8:30</time>
-  <h4>Registration</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T08:30:00Z" title="Monday 20th of April 2015, 8:30 ">8:30</time>
+    <h4>Registration</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry organization">
-  <time datetime="2015-04-20T09:00:00Z" title="Monday 20th of April 2015, 9:00 ">9:00</time>
-  <h4>Welcome Message</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T09:00:00Z" title="Monday 20th of April 2015, 9:00 ">9:00</time>
+    <h4>Welcome Message</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2015-04-20T09:30:00Z" title="Monday 20th of April 2015, 9:30 ">9:30</time>
-  <h4>Quicklisp: On Beyond Beta</h4>
-  <ul class="speakers"><li class="speaker">Zach Beane</li></ul>
+  <header>
+    <time datetime="2015-04-20T09:30:00Z" title="Monday 20th of April 2015, 9:30 ">9:30</time>
+    <h4>Quicklisp: On Beyond Beta</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Zach Beane</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-20T10:30:00Z" title="Monday 20th of April 2015, 10:30 ">10:30</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T10:30:00Z" title="Monday 20th of April 2015, 10:30 ">10:30</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T11:00:00Z" title="Monday 20th of April 2015, 11:00 ">11:00</time>
-  <h4>Efficient Applicative Programming Environments for Computer Vision Applications</h4>
-  <ul class="speakers"><li class="speaker">Benjamin Seppke</li><li class="speaker">Leonie Dreschler-Fischer</li></ul>
+  <header>
+    <time datetime="2015-04-20T11:00:00Z" title="Monday 20th of April 2015, 11:00 ">11:00</time>
+    <h4>Efficient Applicative Programming Environments for Computer Vision Applications</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Benjamin Seppke</li><li class="speaker">Leonie Dreschler-Fischer</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T11:30:00Z" title="Monday 20th of April 2015, 11:30 ">11:30</time>
-  <h4>Keyboard? How quaint. Visual Dataflow Implemented in Lisp</h4>
-  <ul class="speakers"><li class="speaker">Donald Fisk</li></ul>
+  <header>
+    <time datetime="2015-04-20T11:30:00Z" title="Monday 20th of April 2015, 11:30 ">11:30</time>
+    <h4>Keyboard? How quaint. Visual Dataflow Implemented in Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Donald Fisk</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T12:00:00Z" title="Monday 20th of April 2015, 12:00 ">12:00</time>
-  <h4>P2R - Implementation of Processing in Racket</h4>
-  <ul class="speakers"><li class="speaker">Hugo Correia</li><li class="speaker">António Leitão</li></ul>
+  <header>
+    <time datetime="2015-04-20T12:00:00Z" title="Monday 20th of April 2015, 12:00 ">12:00</time>
+    <h4>P2R - Implementation of Processing in Racket</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Hugo Correia</li><li class="speaker">António Leitão</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-20T12:30:00Z" title="Monday 20th of April 2015, 12:30 ">12:30</time>
-  <h4>Lunch</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T12:30:00Z" title="Monday 20th of April 2015, 12:30 ">12:30</time>
+    <h4>Lunch</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T14:30:00Z" title="Monday 20th of April 2015, 14:30 ">14:30</time>
-  <h4>Constraining application behaviour by generating languages</h4>
-  <ul class="speakers"><li class="speaker">Paul van der Walt</li></ul>
+  <header>
+    <time datetime="2015-04-20T14:30:00Z" title="Monday 20th of April 2015, 14:30 ">14:30</time>
+    <h4>Constraining application behaviour by generating languages</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Paul van der Walt</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T15:00:00Z" title="Monday 20th of April 2015, 15:00 ">15:00</time>
-  <h4>Processing List Elements in Reverse Order</h4>
-  <ul class="speakers"><li class="speaker">Irène Durand</li><li class="speaker">Robert Strandh</li></ul>
+  <header>
+    <time datetime="2015-04-20T15:00:00Z" title="Monday 20th of April 2015, 15:00 ">15:00</time>
+    <h4>Processing List Elements in Reverse Order</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Irène Durand</li><li class="speaker">Robert Strandh</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-20T15:30:00Z" title="Monday 20th of April 2015, 15:30 ">15:30</time>
-  <h4>Executable Pseudocode for Graph Algorithms</h4>
-  <ul class="speakers"><li class="speaker">Breanndán Ó Nualláin</li></ul>
+  <header>
+    <time datetime="2015-04-20T15:30:00Z" title="Monday 20th of April 2015, 15:30 ">15:30</time>
+    <h4>Executable Pseudocode for Graph Algorithms</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Breanndán Ó Nualláin</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-20T16:00:00Z" title="Monday 20th of April 2015, 16:00 ">16:00</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T16:00:00Z" title="Monday 20th of April 2015, 16:00 ">16:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2015-04-20T16:30:00Z" title="Monday 20th of April 2015, 16:30 ">16:30</time>
-  <h4>Unwanted memory retention</h4>
-  <ul class="speakers"><li class="speaker">Martin Cracauer</li></ul>
+  <header>
+    <time datetime="2015-04-20T16:30:00Z" title="Monday 20th of April 2015, 16:30 ">16:30</time>
+    <h4>Unwanted memory retention</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Martin Cracauer</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk lightning">
-  <time datetime="2015-04-20T17:30:00Z" title="Monday 20th of April 2015, 17:30 ">17:30</time>
-  <h4>Lightning Talks</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T17:30:00Z" title="Monday 20th of April 2015, 17:30 ">17:30</time>
+    <h4>Lightning Talks</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-20T18:00:00Z" title="Monday 20th of April 2015, 18:00 ">18:00</time>
-  <h4></h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T18:00:00Z" title="Monday 20th of April 2015, 18:00 ">18:00</time>
+    <h4></h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry dinner">
-  <time datetime="2015-04-20T19:30:00Z" title="Monday 20th of April 2015, 19:30 ">19:30</time>
-  <h4>Conference Dinner</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-20T19:30:00Z" title="Monday 20th of April 2015, 19:30 ">19:30</time>
+    <h4>Conference Dinner</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk tutorial">
-  <time datetime="2015-04-21T09:30:00Z" title="Tuesday 21st of April 2015, 9:30 ">9:30</time>
-  <h4>A Gentle Introduction to Gendl, a Common Lisp-based Knowledge Based Engineering Environment</h4>
-  <ul class="speakers"><li class="speaker">Dave Cooper</li></ul>
+  <header>
+    <time datetime="2015-04-21T09:30:00Z" title="Tuesday 21st of April 2015, 9:30 ">9:30</time>
+    <h4>A Gentle Introduction to Gendl, a Common Lisp-based Knowledge Based Engineering Environment</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Dave Cooper</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-21T11:00:00Z" title="Tuesday 21st of April 2015, 11:00 ">11:00</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-21T11:00:00Z" title="Tuesday 21st of April 2015, 11:00 ">11:00</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T11:30:00Z" title="Tuesday 21st of April 2015, 11:30 ">11:30</time>
-  <h4>lambdatalk</h4>
-  <ul class="speakers"><li class="speaker">Alain Marty</li></ul>
+  <header>
+    <time datetime="2015-04-21T11:30:00Z" title="Tuesday 21st of April 2015, 11:30 ">11:30</time>
+    <h4>lambdatalk</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Alain Marty</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T12:00:00Z" title="Tuesday 21st of April 2015, 12:00 ">12:00</time>
-  <h4>Symbolic Pattern Matching in Clojure</h4>
-  <ul class="speakers"><li class="speaker">Simon Lynch</li></ul>
+  <header>
+    <time datetime="2015-04-21T12:00:00Z" title="Tuesday 21st of April 2015, 12:00 ">12:00</time>
+    <h4>Symbolic Pattern Matching in Clojure</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Simon Lynch</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2015-04-21T12:30:00Z" title="Tuesday 21st of April 2015, 12:30 ">12:30</time>
-  <h4>Escaping the Heap</h4>
-  <ul class="speakers"><li class="speaker">Ahmon Dancy</li></ul>
+  <header>
+    <time datetime="2015-04-21T12:30:00Z" title="Tuesday 21st of April 2015, 12:30 ">12:30</time>
+    <h4>Escaping the Heap</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Ahmon Dancy</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-21T13:00:00Z" title="Tuesday 21st of April 2015, 13:00 ">13:00</time>
-  <h4>Lunch</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-21T13:00:00Z" title="Tuesday 21st of April 2015, 13:00 ">13:00</time>
+    <h4>Lunch</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk keynote">
-  <time datetime="2015-04-21T14:30:00Z" title="Tuesday 21st of April 2015, 14:30 ">14:30</time>
-  <h4>µKanren: Running the Little Things Backwards</h4>
-  <ul class="speakers"><li class="speaker">Bodil Stokke</li></ul>
+  <header>
+    <time datetime="2015-04-21T14:30:00Z" title="Tuesday 21st of April 2015, 14:30 ">14:30</time>
+    <h4>µKanren: Running the Little Things Backwards</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Bodil Stokke</li></ul>
+  
 </section>
 </li><li><section class="programme-entry break">
-  <time datetime="2015-04-21T15:30:00Z" title="Tuesday 21st of April 2015, 15:30 ">15:30</time>
-  <h4>Coffee</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-21T15:30:00Z" title="Tuesday 21st of April 2015, 15:30 ">15:30</time>
+    <h4>Coffee</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T16:00:00Z" title="Tuesday 21st of April 2015, 16:00 ">16:00</time>
-  <h4>Woo: a fast HTTP server for Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Eitaro Fukamachi</li></ul>
+  <header>
+    <time datetime="2015-04-21T16:00:00Z" title="Tuesday 21st of April 2015, 16:00 ">16:00</time>
+    <h4>Woo: a fast HTTP server for Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Eitaro Fukamachi</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T16:30:00Z" title="Tuesday 21st of April 2015, 16:30 ">16:30</time>
-  <h4>Clasp: Common Lisp+LLVM+C++</h4>
-  <ul class="speakers"><li class="speaker">Christian Schafmeister</li></ul>
+  <header>
+    <time datetime="2015-04-21T16:30:00Z" title="Tuesday 21st of April 2015, 16:30 ">16:30</time>
+    <h4>Clasp: Common Lisp+LLVM+C++</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Christian Schafmeister</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T17:00:00Z" title="Tuesday 21st of April 2015, 17:00 ">17:00</time>
-  <h4>Quantum Physics Simulations in Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Miroslav Urbanek</li></ul>
+  <header>
+    <time datetime="2015-04-21T17:00:00Z" title="Tuesday 21st of April 2015, 17:00 ">17:00</time>
+    <h4>Quantum Physics Simulations in Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Miroslav Urbanek</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk">
-  <time datetime="2015-04-21T17:30:00Z" title="Tuesday 21st of April 2015, 17:30 ">17:30</time>
-  <h4>First-class Global Environments in Common Lisp</h4>
-  <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  <header>
+    <time datetime="2015-04-21T17:30:00Z" title="Tuesday 21st of April 2015, 17:30 ">17:30</time>
+    <h4>First-class Global Environments in Common Lisp</h4>
+  </header>
+  
+    <ul class="speakers"><li class="speaker">Robert Strandh</li></ul>
+  
 </section>
 </li><li><section class="programme-entry talk lightning">
-  <time datetime="2015-04-21T18:00:00Z" title="Tuesday 21st of April 2015, 18:00 ">18:00</time>
-  <h4>Lightning Talks</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-21T18:00:00Z" title="Tuesday 21st of April 2015, 18:00 ">18:00</time>
+    <h4>Lightning Talks</h4>
+  </header>
+  
 </section>
 </li><li><section class="programme-entry organization">
-  <time datetime="2015-04-21T18:30:00Z" title="Tuesday 21st of April 2015, 18:30 ">18:30</time>
-  <h4>Conference End</h4>
-  <ul class="speakers"/>
+  <header>
+    <time datetime="2015-04-21T18:30:00Z" title="Tuesday 21st of April 2015, 18:30 ">18:30</time>
+    <h4>Conference End</h4>
+  </header>
+  
 </section>
 </li></ol>
           </section>
@@ -1380,7 +1479,7 @@ In this talk, we will explore the µKanren language by implementing it from firs
   </p>
   <p>
     Last updated on
-    <time datetime="2017-01-03T20:53:17-01:00" class="published updated" title="Tuesday 3rd of January 2017, 20:53 (-01:00)">2017.01.03</time>
+    <time datetime="2017-01-03T22:24:18-01:00" class="published updated" title="Tuesday 3rd of January 2017, 22:24 (-01:00)">2017.01.03</time>
   </p>
   <p>
     Generated by
