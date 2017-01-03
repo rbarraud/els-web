@@ -202,8 +202,8 @@
       (.past :opacity 0.5)
       (.current :font-size 1.3em
                 (h4 :font-weight bold))
-      (".current::before"
-       :content "''"
+      (".current header::before"
+       :content ""
        :width 0 :height 0
        :border-top 10px solid transparent
        :border-bottom 10px solid transparent
