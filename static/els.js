@@ -4,6 +4,15 @@ var ELS = function(){
     self.time = null;
     self.updateInterval = 5000;
 
+    self.log = function(){
+        if(console.log){
+            var args = Array.prototype.slice.call(arguments);
+            args.unshift("[ELS]");
+            console.log.apply(console, args);
+        }
+        return null;
+    }
+
     self.decodeEmail = function(encoded){
         var parts = encoded.split(",");
         return String.fromCharCode.apply(null, parts);
@@ -74,7 +83,7 @@ var ELS = function(){
     self.formatDateLocally = function(date){
         var pad = function(a){return (a<10)? "0"+a : a;}
         return date.getFullYear()
-            +"."+ date.getMonth()
+            +"."+ (date.getMonth()+1)
             +"."+ date.getDate()
             +" "+ date.getHours()
             +":"+ pad(date.getMinutes());
@@ -135,12 +144,12 @@ var ELS = function(){
         setter.addEventListener('change', function(){
             var date = new Date(Date.parse(setter.value+"Z") + 60*self.findTimezoneOffset());
             if(setter.value === ""){
-                console.log("Resetting date-time to current, updating time.");
+                self.log("Resetting date-time to current, updating time.");
                 self.time = null;
             }else if(isNaN(date.getTime())){
-                console.log("Invalid date-time", setter.value, ", not changing.");
+                self.log("Invalid date-time", setter.value, ", not changing.");
             }else{
-                console.log("Updating date-time to fixed stamp", date);
+                self.log("Updating date-time to fixed stamp", date);
                 self.time = date;
             }
             self.updateProgramme(self.time);
@@ -179,12 +188,14 @@ var ELS = function(){
     }
 
     self.init = function(){
+        self.log("Initializing...");
         self.decodeEmailElements();
         if(document.getElementById("programme")){
             self.continuouslyUpdateProgramme();
             self.initTimeSetter();
         }
         self.decorateBackground();
+        self.log("Done.");
         return self;
     }
 }
