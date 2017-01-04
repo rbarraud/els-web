@@ -141,7 +141,8 @@
     ((:or "#organization" "#speakers")
      (.role :display none)
      (.fn :display none)
-     (".org::before" :content ", "))
+     (".org::before" :content ", " :margin-left -2px)
+     (".adr::before" :content ", " :margin-left -2px))
 
     ("#organization"
      (ul :margin 0)
