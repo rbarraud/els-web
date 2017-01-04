@@ -154,6 +154,7 @@ var ELS = function(){
             }
             self.updateProgramme(self.time);
         });
+        return setter;
     }
 
     self.decorateBackground = function(num){
@@ -185,6 +186,7 @@ var ELS = function(){
             el.style.background = "rgba(28, 75, 128, 0.5)";
             container.appendChild(el);
         }
+        return null;
     }
 
     self.init = function(){
