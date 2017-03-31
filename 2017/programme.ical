@@ -1,9 +1,10 @@
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
+NAME:European Lisp Symposium 2017
 BEGIN:VEVENT
-UID:1-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:1-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170403T070000Z
 DTEND:20170403T073000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -12,10 +13,136 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:2-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:2-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170403T073000Z
 DTEND:20170403T083000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Identity in a World of Values
+DESCRIPTION:Data persistence can add a great deal of complexity to app
+ lication software, and making the gap between application and storage 
+ has been a constant field of research, experiments and products. In th
+ e object oriented programming paradigm, persistence seems to be a natu
+ ral extension to object behavior, and even though one could argue that
+  many persistent object systems have flaws and leak their abstractions
+ , there is a large body of prior art and research in that area.\n\nIn 
+ the functional programming world, persistence does not find as natural
+  a partnering abstraction, and it is often either conceptionally pushe
+ d to the boundaries of the application, or treated in an ad-hoc fashio
+ n interleaved with the beauty and conceptional rigor of pure functions
+ .\n\nThe presentation discusses these forces and explores how Clojure'
+ s Software Transactional Memory system can be used to implement applic
+ ation data persistence.
+CONTACT:Hans Hübner
+END:VEVENT
+BEGIN:VEVENT
+UID:3-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T090000Z
+DTEND:20170403T093000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Common Lisp UltraSpec - A Project For Modern Common Lisp Docum
+ entation
+DESCRIPTION:
+CONTACT:Michal Herda
+END:VEVENT
+BEGIN:VEVENT
+UID:4-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T093000Z
+DTEND:20170403T100000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Loading Multiple Versions of an ASDF System in the Same Lisp I
+ mage
+DESCRIPTION:
+CONTACT:Vsevolod Domkin
+END:VEVENT
+BEGIN:VEVENT
+UID:5-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T113000Z
+DTEND:20170403T120000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:A Lisp Way to Type Theory and Formal Proofs
+DESCRIPTION:
+CONTACT:Frederic Peschanski
+END:VEVENT
+BEGIN:VEVENT
+UID:6-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T120000Z
+DTEND:20170403T123000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Programmatic Manipulation of Common Lisp Type Specifiers
+DESCRIPTION:
+CONTACT:Jim Newton, Didier Verna, Maximilien Colange
+END:VEVENT
+BEGIN:VEVENT
+UID:7-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T123000Z
+DTEND:20170403T130000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Type Inference in Cleavir
+DESCRIPTION:
+CONTACT:Alexander Wood
+END:VEVENT
+BEGIN:VEVENT
+UID:8-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T133000Z
+DTEND:20170403T135200Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Delivering Common Lisp Applications with ASDF 3.3
+DESCRIPTION:
+CONTACT:Robert Goldman, Elias Pipping, François-René Rideau
+END:VEVENT
+BEGIN:VEVENT
+UID:9-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T135200Z
+DTEND:20170403T141500Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Radiance – a Web Application Environment
+DESCRIPTION:
+CONTACT:Nicolas Hafner
+END:VEVENT
+BEGIN:VEVENT
+UID:10-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T141500Z
+DTEND:20170403T143700Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Teaching Students of Engineering some Insights of the Internet
+  of Things using Racket and the RaspberryPi
+DESCRIPTION:
+CONTACT:Daniel Brunner, Stephan Brunner
+END:VEVENT
+BEGIN:VEVENT
+UID:11-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T143700Z
+DTEND:20170403T150000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Interactive Functional Medical Image Analysis
+DESCRIPTION:
+CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
+END:VEVENT
+BEGIN:VEVENT
+UID:12-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170403T150000Z
+DTEND:20170403T153000Z
+LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
+SUMMARY:Lightning Talks
+DESCRIPTION:
+CONTACT:
+END:VEVENT
+BEGIN:VEVENT
+UID:13-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
+DTSTART:20170404T070000Z
+DTEND:20170404T080000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
 SUMMARY:How the strengths of Lisp-family languages facilitate building
   complex and flexible bioinformatics applications
@@ -45,134 +172,8 @@ DESCRIPTION:We present a rationale for expanding the presence of the L
 CONTACT:Bohdan Khomtchouk
 END:VEVENT
 BEGIN:VEVENT
-UID:3-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T090000Z
-DTEND:20170403T093000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Common Lisp UltraSpec - A Project For Modern Common Lisp Docum
- entation
-DESCRIPTION:
-CONTACT:Michal Herda
-END:VEVENT
-BEGIN:VEVENT
-UID:4-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T093000Z
-DTEND:20170403T100000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Loading Multiple Versions of an ASDF System in the Same Lisp I
- mage
-DESCRIPTION:
-CONTACT:Vsevolod Domkin
-END:VEVENT
-BEGIN:VEVENT
-UID:5-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T113000Z
-DTEND:20170403T120000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:A Lisp Way to Type Theory and Formal Proofs
-DESCRIPTION:
-CONTACT:Frederic Peschanski
-END:VEVENT
-BEGIN:VEVENT
-UID:6-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T120000Z
-DTEND:20170403T123000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Programmatic Manipulation of Common Lisp Type Specifiers
-DESCRIPTION:
-CONTACT:Jim Newton, Didier Verna, Maximilien Colange
-END:VEVENT
-BEGIN:VEVENT
-UID:7-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T123000Z
-DTEND:20170403T130000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Type Inference in Cleavir
-DESCRIPTION:
-CONTACT:Alexander Wood
-END:VEVENT
-BEGIN:VEVENT
-UID:8-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T133000Z
-DTEND:20170403T135200Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Delivering Common Lisp Applications with ASDF 3.3
-DESCRIPTION:
-CONTACT:Robert Goldman, Elias Pipping, François-René Rideau
-END:VEVENT
-BEGIN:VEVENT
-UID:9-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T135200Z
-DTEND:20170403T141500Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Radiance – a Web Application Environment
-DESCRIPTION:
-CONTACT:Nicolas Hafner
-END:VEVENT
-BEGIN:VEVENT
-UID:10-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T141500Z
-DTEND:20170403T143700Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Teaching Students of Engineering some Insights of the Internet
-  of Things using Racket and the RaspberryPi
-DESCRIPTION:
-CONTACT:Daniel Brunner, Stephan Brunner
-END:VEVENT
-BEGIN:VEVENT
-UID:11-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T143700Z
-DTEND:20170403T150000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Interactive Functional Medical Image Analysis
-DESCRIPTION:
-CONTACT:Benjamin Seppke, Leonie Dreschler-Fischer
-END:VEVENT
-BEGIN:VEVENT
-UID:12-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170403T150000Z
-DTEND:20170403T153000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Lightning Talks
-DESCRIPTION:
-CONTACT:
-END:VEVENT
-BEGIN:VEVENT
-UID:13-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
-DTSTART:20170404T070000Z
-DTEND:20170404T080000Z
-LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
-SUMMARY:Identity in a World of Values
-DESCRIPTION:Data persistence can add a great deal of complexity to app
- lication software, and making the gap between application and storage 
- has been a constant field of research, experiments and products. In th
- e object oriented programming paradigm, persistence seems to be a natu
- ral extension to object behavior, and even though one could argue that
-  many persistent object systems have flaws and leak their abstractions
- , there is a large body of prior art and research in that area.\n\nIn 
- the functional programming world, persistence does not find as natural
-  a partnering abstraction, and it is often either conceptionally pushe
- d to the boundaries of the application, or treated in an ad-hoc fashio
- n interleaved with the beauty and conceptional rigor of pure functions
- .\n\nThe presentation discusses these forces and explores how Clojure'
- s Software Transactional Memory system can be used to implement applic
- ation data persistence.
-CONTACT:Hans Hübner
-END:VEVENT
-BEGIN:VEVENT
-UID:14-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:14-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T080000Z
 DTEND:20170404T083000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -181,8 +182,8 @@ DESCRIPTION:
 CONTACT:Marco Heisig, Nicolas Neuss
 END:VEVENT
 BEGIN:VEVENT
-UID:15-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:15-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T090000Z
 DTEND:20170404T100000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -191,8 +192,8 @@ DESCRIPTION:
 CONTACT:Steve Losh
 END:VEVENT
 BEGIN:VEVENT
-UID:16-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:16-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T113000Z
 DTEND:20170404T120000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -201,8 +202,8 @@ DESCRIPTION:
 CONTACT:Irène Durand, Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:17-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:17-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T120000Z
 DTEND:20170404T123000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -211,8 +212,8 @@ DESCRIPTION:
 CONTACT:Alexander Lier, Kai Selgrad, Marc Stamminger
 END:VEVENT
 BEGIN:VEVENT
-UID:18-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:18-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T123000Z
 DTEND:20170404T130000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -222,8 +223,8 @@ CONTACT:Jonas De Bleser, Quentin Stiévenart, Jens Nicolay, Coen De Roo
  ver
 END:VEVENT
 BEGIN:VEVENT
-UID:19-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:19-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T133000Z
 DTEND:20170404T140000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -232,8 +233,8 @@ DESCRIPTION:
 CONTACT:Alain Marty
 END:VEVENT
 BEGIN:VEVENT
-UID:20-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:20-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T140000Z
 DTEND:20170404T143000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -242,8 +243,8 @@ DESCRIPTION:
 CONTACT:Mikhail Raskin
 END:VEVENT
 BEGIN:VEVENT
-UID:21-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:21-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T143000Z
 DTEND:20170404T150000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -252,8 +253,8 @@ DESCRIPTION:
 CONTACT:Irène Durand, Robert Strandh
 END:VEVENT
 BEGIN:VEVENT
-UID:22-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:22-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T150000Z
 DTEND:20170404T153000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
@@ -262,8 +263,8 @@ DESCRIPTION:
 CONTACT:
 END:VEVENT
 BEGIN:VEVENT
-UID:23-3699870250@european-lisp-symposium.org
-DTSTAMP:20170330T144410Z
+UID:23-3699964305@european-lisp-symposium.org
+DTSTAMP:20170331T165145Z
 DTSTART:20170404T153000Z
 DTEND:20170404T163000Z
 LOCATION:Pleinlaan 2, Building D, 1050 Brussels, Belgium
